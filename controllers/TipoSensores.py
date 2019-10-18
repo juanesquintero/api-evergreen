@@ -11,9 +11,7 @@ class TipoSensor():
         rows = cur.fetchall()
         columns = [i[0] for i in cur.description]
         for row in rows:
-            # Create a zip object from two lists
-            registro = dict(zip(columns, row))
-            # Create a dictionary from zip object
+            registro = zip(columns, row)
             json = dict(registro)
             lista.append(json)
         return jsonify(lista)
