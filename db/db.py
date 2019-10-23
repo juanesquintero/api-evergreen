@@ -13,5 +13,5 @@ cnx = mysql.connector.connect(
     host="evergreen-db-server.mysql.database.azure.com", 
     port=3306, 
     database="evergreen", 
-    ssl_verify_cert=false
+    ssl_verify_cert=False
 )
