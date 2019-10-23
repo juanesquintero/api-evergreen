@@ -23,3 +23,4 @@ def postOne():
     body = request.json
     return (TipoSensor.create(body))
 
+app.run(port=8000)
